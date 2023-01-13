@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/lfilella97/202301w1chwe-lluis-filella-jaume-cuadrada#readme",
   "devDependencies": {
+    "husky": "^8.0.0",
     "parcel": "^2.8.2",
-    "rifraf": "^2.0.3",
-    "husky": "^8.0.0"
+    "rimraf": "^4.0.4"
   }
 }
