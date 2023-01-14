@@ -8,6 +8,7 @@
   --color-secondary-light: #61291c;
   --typography-playfair: "playfair Display", sans-seriff;
   --typography-rubik: "rubik", sans-seriff;
+  --box-text-max-width: 320px;
 }
 
 *,
@@ -18,9 +19,18 @@
 
 body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-  background-color: aqua;
   width: 100vw;
   margin: 0;
+  > * {
+    max-width: --box-text-max-width;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
 }
 
 .main-header {
@@ -32,4 +42,25 @@ body {
   gap: 32px;
   width: 100%;
   height: 98px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text-box {
+    max-width: var(--box-text-max-width);
+    border: 1px solid red;
+  }
+  &__title {
+    font-family: var(--typography-playfair);
+    font-size: 40px;
+    color: white;
+  }
+  &__text {
+    font-family: var(--typography-rubik);
+  }
+  width: 100vw;
+  margin: 0;
 }
