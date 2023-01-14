@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/lfilella97/202301w1chwe-lluis-filella-jaume-cuadrada#readme",
   "devDependencies": {
+    "@fontsource/playfair-display": "^4.5.12",
+    "@fontsource/rubik": "^4.5.13",
     "@parcel/transformer-sass": "^2.8.2",
     "husky": "^8.0.0",
     "parcel": "^2.8.2",
