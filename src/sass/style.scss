@@ -1,6 +1,21 @@
 @import url(/node_modules/@fontsource/playfair-display/400.css);
 @import url(/node_modules/@fontsource/rubik/400.css);
 
+:root {
+  --color-main: #ff7757;
+  --color-main-light: #ffd2c7;
+  --color-secondary: #331811;
+  --color-secondary-light: #61291c;
+  --typography-playfair: "playfair Display", sans-seriff;
+  --typography-rubik: "rubik", sans-seriff;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   background-color: aqua;
