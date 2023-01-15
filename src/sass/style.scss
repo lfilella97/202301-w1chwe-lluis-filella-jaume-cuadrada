@@ -247,3 +247,95 @@ body {
   border-radius: 12px;
   color: white;
 }
+
+@media screen and (min-width: 1205px) {
+  body > * {
+    max-width: none;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 198px;
+    height: 1210px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(/src/images/river-landscape.webp);
+
+    object-position: 100% 0;
+    gap: 100px;
+
+    &__text-box {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      gap: 16px;
+    }
+
+    &__title {
+      font-family: var(--typography-playfair);
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-family: var(--typography-rubik);
+      font-size: 1.125rem;
+    }
+
+    &__form {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: stretch;
+      gap: 60px;
+      height: 527px;
+      background: #ffffff;
+      border-radius: 16px;
+      font-size: 14px;
+
+      ul {
+        padding: 20px;
+        height: 467;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+      }
+
+      label {
+        font-family: "Rubik";
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 12px;
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        margin-bottom: 50px;
+        align-self: stretch;
+        border: none;
+        border-bottom: 1px solid #000;
+      }
+
+      input:focus-visible {
+        outline: none;
+      }
+
+      button {
+        font-size: 36px;
+        background-color: var(--color-main);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 12px;
+        border-radius: 0px 0px 16px 16px;
+        align-self: stretch;
+      }
+    }
+  }
+}
